@@ -1,0 +1,88 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "Iron Sword",
+            "type": "weapon",
+            "rarity": "common",
+            "stats": {
+                "attack": 15,
+                "critical": 4,
+                "durability": 100
+            },
+            "effects": [],
+            "description": "A basic sword forged from iron. A balance between durability and damage.",
+            "value": 39
+        },
+        {
+            "id": 2,
+            "name": "Iron Dagger",
+            "type": "weapon",
+            "rarity": "common",
+            "stats": {
+                "attack": 19,
+                "critical": 6,
+                "durability": 85
+            },
+            "effects": [],
+            "description": "A basic dagger forged from iron, perfect for thiefs with great agility.",
+            "value": 36
+        },
+        {
+            "id": 3,
+            "name": "Wooden Shield",
+            "type": "weapon",
+            "rarity": "common",
+            "stats": {
+                "attack": 2,
+                "critical": 0,
+                "durability": 65
+            },
+            "effects": [],
+            "description": "A starter shield, somehow it feels very durable.",
+            "value": 10
+        },
+        {
+            "id": 4,
+            "name": "Wooden Staff",
+            "type": "weapon",
+            "rarity": "common",
+            "stats": {
+                "attack": 8,
+                "critical": 10,
+                "durability": 160
+            },
+            "effects": [],
+            "description": "A basic catalyst. Unexplainable is to why natural made catalysts are super durable.",
+            "value": 23
+        },
+        {
+            "id": 5,
+            "name": "Iron Battleaxe",
+            "type": "weapon",
+            "rarity": "common",
+            "stats": {
+                "attack": 17,
+                "critical": 9,
+                "durability": 95
+            },
+            "effects": [],
+            "description": "A basic battleaxe forged from iron. With a few wind-ups, it could get some tons of damage.",
+            "value": 10
+        },
+        {
+            "id": 6,
+            "name": "Iron Mace",
+            "type": "weapon",
+            "rarity": "common",
+            "stats": {
+                "attack": 17,
+                "critical": 9,
+                "durability": 95
+            },
+            "effects": [],
+            "description": "A basic mace forged from iron. With a few wind-ups, it could get some tons of damage.",
+            "value": 10
+        }
+
+    ]}
