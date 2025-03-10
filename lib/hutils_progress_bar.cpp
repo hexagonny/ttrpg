@@ -3,7 +3,6 @@
 #include <iostream>
 #include <algorithm>
 
-#define SCREEN_WIDTH  50
 constexpr int BAR_LENGTH = 40;
 
 namespace hUtils {
@@ -29,9 +28,9 @@ namespace hUtils {
 
         std::cout << std::string(padding, ' ') << bar << '\n';
 
-        std::string percentageString = hUtils::text.toString(percentage * 100, 1) + "/100.0 % (" +
-                                       hUtils::text.toString(value, 1) + "/" +
-                                       hUtils::text.toString(maxPoints, 1) + ")";
+        std::string percentageString = hUtils::text.toString(percentage * 100, 2) + "/100.00 % (" +
+                                       hUtils::text.toString(value, 2) + "/" +
+                                       hUtils::text.toString(maxPoints, 2) + ")";
 
         hUtils::text.toCentered(percentageString);
     }

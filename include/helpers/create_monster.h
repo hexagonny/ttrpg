@@ -2,7 +2,6 @@
 #define MONSTERHELPER_H
 
 #include "ttrpg.h"
-#include "hutils.h"
 
 //  Invent your own monsters!
 void createMonster(Monster &monster, std::string name,

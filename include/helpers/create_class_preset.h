@@ -2,7 +2,6 @@
 #define CLASSPRESETHELPER_H
 
 #include "ttrpg.h"
-#include "hutils.h"
 
 // Helper function to create presets.
 void createClassPreset(Player &player,

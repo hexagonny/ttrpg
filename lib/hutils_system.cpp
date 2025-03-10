@@ -7,9 +7,6 @@
 using std::cout;
 using std::string;
 
-#define SCREEN_WIDTH  75
-#define SCREEN_HEIGHT 30
-
 namespace hUtils {
 
     void setConsoleWindowSize() {

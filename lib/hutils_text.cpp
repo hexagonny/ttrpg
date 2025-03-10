@@ -7,8 +7,6 @@
 using std::cout;
 using std::string;
 
-#define SCREEN_WIDTH  75
-#define SCREEN_HEIGHT 30
 
 namespace hUtils {
 
@@ -99,7 +97,14 @@ namespace hUtils {
 
     void Text::clearLine(int line)
     {
-        cout<<"\033["<<line<<";1H";
-        cout<<"\033[J";
+        cout << "\033[" << line << ";1H";
+        cout << "\033[J";
+    }
+
+    void Text::clearAbove(int n) {
+        for (int i = 0; i < n; i++) {
+            cout << "\033[1A" << "\033[2K";  // Move up 1 line and clear it
+        }
+        cout.flush();
     }
 }

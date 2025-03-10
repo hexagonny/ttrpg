@@ -31,23 +31,27 @@ void allocationOption(Player &player, std::string fileName)
 
 void displayInfo(Player player)
 {   
-    //  Bars that represent health, mana and exp.
+    text.toLine();
 
-    //  General Info.
-    cout<<"\tPlayer Info:\n";
-    text.toLeft("Name:"   + player.getName(),      2, {}, {}, 14);
-    text.toLeft("Class:"  + player.getCharClass(), 2, {}, {}, 14);
-    text.toLeft("Health:" + text.toString(player.getCurrentHealth(), 1)
-                    + "/" + text.toString(player.getTotalHealth(),   1) + " HP", 2, {}, {}, 14);
-    text.toLeft("Mana:"   + text.toString(player.getCurrentMana(),   1)
-                    + "/" + text.toString(player.getTotalMana(),     1) + " MP\n", 2, {}, {}, 14);
+    text.toLeft("Player Info:", 1);
+    text.toCentered(player.getName());
+    text.toCentered("Class: " + player.getCharClass());
+    bar.setBar(player.getCurrentHealth(), player.getTotalHealth(), 124);
+    bar.setBar(player.getCurrentMana(), player.getTotalMana());
+
+    text.toLine();
     
-    //  Attributes.
     cout<<"\tAttributes:\n";
     cout<<"\t\t"<<setw(14)<<left<<"Strength:"     << player.getStrength()     << '\n'
         <<"\t\t"<<setw(14)<<left<<"Endurance:"    << player.getEndurance()    << '\n'
         <<"\t\t"<<setw(14)<<left<<"Intelligence:" << player.getIntelligence() << '\n'
         <<"\t\t"<<setw(14)<<left<<"Dexterity:"    << player.getDexterity()    << '\n';
-    cout<< '\n';
+
+    text.toLine();
+
+    cout<<"\tEquipments:\n";
+    cout<<"\t\t"<<setw(14)<<left<<"Main-hand:" << player.getMainHand() << '\n'
+        <<"\t\t"<<setw(14)<<left<<"Off-hand:"  << player.getOffHand()  << '\n';
+
     pause();
 }

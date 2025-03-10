@@ -1,0 +1,11 @@
+Name-Lou
+Class-Tank
+CurrHealth-100.037
+CurrMana-60
+Strength-5
+Endurance-4
+Intelligence-0
+Dexterity-1
+Points-0
+Mainhand-Iron Axe
+Offhand-Iron Shield

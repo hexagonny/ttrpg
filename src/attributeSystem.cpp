@@ -62,9 +62,6 @@ void modifyAttributes(Player &player, std::string fileName)
         text.toCentered("\tPoints allocated successfully!\n");
         sleep(1000);
     }
-
     pause();
-    text.toCentered("All points have been distributed!\n");
-
     savePlayer(player, fileName);
 }

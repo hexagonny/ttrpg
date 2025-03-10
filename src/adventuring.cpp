@@ -15,7 +15,7 @@ void adventure(Player &player, Monster &monster)
     int randArea = rand() % 2 + 1;
     int randEncounter = rand() % 4 + 1;
 
-    text.clearAll();
+    
 
     cout << "\tYou wondered out to the grasslands and followed the road...\n";
     sleep(2000);

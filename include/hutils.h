@@ -20,6 +20,9 @@
 #define HUTIL_API
 #endif  
 
+#define SCREEN_WIDTH  75
+#define SCREEN_HEIGHT 30
+
 namespace hUtils {
 
     // --- SYSTEM UTILITIES ---
@@ -62,6 +65,7 @@ namespace hUtils {
         HUTIL_API std::string defaultText();                     //  Reset text color.
         HUTIL_API void clearAll          ();                     //  Clears every output in the terminal.
         HUTIL_API void clearLine         (int line);             //  Clears an assigned line and below it.
+        HUTIL_API void clearAbove        (int n);                //  Clears the lines above it.
     };
 
     struct Table {

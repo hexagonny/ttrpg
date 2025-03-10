@@ -18,7 +18,7 @@ void takeDamage(Player &player, Monster &monster);
 void battleMenu(Player &player, Monster &monster);
 
 // Function to load an existing .txt file.
-void characterLoad(Player &player, std::string fileName);
+void characterLoad(Player &player, const std::string& fileName);
 // Function to save progress.
 void savePlayer(const Player &player, const std::string &filename);
 

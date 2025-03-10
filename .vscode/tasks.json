@@ -6,8 +6,9 @@
             "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
             "args": [
                 "${workspaceFolder}\\src\\*.cpp",
-                "${workspaceFolder}\\lib\\*.cpp",
+                "${workspaceFolder}\\src\\save\\*.cpp",
                 "${workspaceFolder}\\src\\utils\\widgets\\*.cpp",
+                "${workspaceFolder}\\lib\\*.cpp",
                 "-I", "${workspaceFolder}\\include",
                 "-I", "${workspaceFolder}\\include\\entities",
                 "-I", "${workspaceFolder}\\include\\helpers",

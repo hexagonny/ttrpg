@@ -18,7 +18,7 @@ void statisticScreen(Player &player, std::string fileName)
     displayInfo(player);
 
     sleep(8000);
-    if(player.allocation_points>0){
+    if(player.allocation_points > 0){
         allocationOption(player, fileName);
     }
     pause();
